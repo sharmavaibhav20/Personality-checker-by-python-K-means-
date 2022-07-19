@@ -1,3 +1,14 @@
+ import pandas as pd
+
+df = pd.read_csv('data-final.csv', delimiter="\t")
+
+df
+
+columns = df.columns
+
+for column in columns:
+    print(column)
+
 import numpy as np
 
 X = df[df.columns[0:50]]
